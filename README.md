@@ -93,22 +93,29 @@ yarn start
 # 📂 Struktur Proyek
 Berikut adalah gambaran umum singkat tentang struktur file utama proyek:
 ```bash
-API Movie/
-├── public/                  # File statis (contoh: index.html)
+
+├── node_modules/            # Dependensi proyek (dihasilkan saat instalasi)
+├── public/                  # File statis (contoh: index.html, favicon.ico)
 ├── src/
-│   ├── assets/              # Gambar, ikon, dll. (jika ada)
-│   ├── component/           # Komponen React yang dapat digunakan kembali (misal: Footer.jsx)
-│   ├── pages/
+│   ├── component/           # Komponen React yang dapat digunakan kembali (misal: Footer.jsx, Navbar.jsx)
+│   ├── css/                 # File-file styling CSS
+│   │   └── index.css
+│   ├── pages/               # Halaman utama aplikasi
+│   │   ├── App.jsx          # Komponen root aplikasi dan konfigurasi router utama
+│   │   ├── Favorites.jsx    # Halaman untuk menampilkan film favorit
 │   │   ├── Home.jsx         # Komponen utama halaman beranda
-│   │   └── MovieDetail.jsx  # Komponen halaman detail film (diasumsikan)
-│   ├── App.js               # Komponen root aplikasi dan konfigurasi router
-│   ├── index.js             # Titik masuk aplikasi React
-│   └── index.css            # Styling global
-├── .env                     # File untuk variabel lingkungan (API Key)
+│   │   └── MovieDetail.jsx  # Komponen halaman detail film
+│   └── main.jsx             # Titik masuk utama aplikasi React (merender App.jsx)
 ├── .gitignore               # File dan folder yang diabaikan oleh Git
-├── package.json             # Detail proyek dan daftar dependensi
+├── eslint.config.js         # Konfigurasi ESLint (alat linter kode)
+├── index.html               # Halaman HTML utama aplikasi
+├── package-lock.json        # Catatan versi dependensi yang tepat (untuk npm)
+├── package.json             # Detail proyek, skrip, dan daftar dependensi
+├── postcss.config.js        # Konfigurasi PostCSS (digunakan oleh Tailwind CSS)
 ├── README.md                # File dokumentasi ini
-└── ...
+├── tailwind.config.js       # Konfigurasi Tailwind CSS
+└── vite.config.js           # Konfigurasi Vite (bundler JavaScript)
+
 ```
 # 📄 Lisensi
 Proyek ini dilisensikan di bawah lisensi MIT. Lihat file LICENSE untuk detail lebih lanjut.
