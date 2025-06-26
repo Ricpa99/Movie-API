@@ -93,7 +93,7 @@ yarn start
 # 📂 Struktur Proyek
 Berikut adalah gambaran umum singkat tentang struktur file utama proyek:
 ```bash
-
+.
 ├── node_modules/            # Dependensi proyek (dihasilkan saat instalasi)
 ├── public/                  # File statis (contoh: index.html, favicon.ico)
 ├── src/
@@ -101,11 +101,12 @@ Berikut adalah gambaran umum singkat tentang struktur file utama proyek:
 │   ├── css/                 # File-file styling CSS
 │   │   └── index.css
 │   ├── pages/               # Halaman utama aplikasi
-│   │   ├── App.jsx          # Komponen root aplikasi dan konfigurasi router utama
 │   │   ├── Favorites.jsx    # Halaman untuk menampilkan film favorit
 │   │   ├── Home.jsx         # Komponen utama halaman beranda
 │   │   └── MovieDetail.jsx  # Komponen halaman detail film
+│   ├── App.jsx              # Komponen root aplikasi dan konfigurasi router utama (DIPINDAHKAN KE SINI)
 │   └── main.jsx             # Titik masuk utama aplikasi React (merender App.jsx)
+├── .env                     # File untuk variabel lingkungan (API Key TMDb)
 ├── .gitignore               # File dan folder yang diabaikan oleh Git
 ├── eslint.config.js         # Konfigurasi ESLint (alat linter kode)
 ├── index.html               # Halaman HTML utama aplikasi
