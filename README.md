@@ -92,7 +92,7 @@ yarn start
 
 # 📂 Struktur Proyek
 Berikut adalah gambaran umum singkat tentang struktur file utama proyek:
-
+```bash
 API Movie/
 ├── public/                  # File statis (contoh: index.html)
 ├── src/
@@ -109,7 +109,7 @@ API Movie/
 ├── package.json             # Detail proyek dan daftar dependensi
 ├── README.md                # File dokumentasi ini
 └── ...
-
+```
 # 📄 Lisensi
 Proyek ini dilisensikan di bawah lisensi MIT. Lihat file LICENSE untuk detail lebih lanjut.
 
