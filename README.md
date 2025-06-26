@@ -1,4 +1,4 @@
-# 🎬  Movie Explorer App
+# 🎬  Movie App API
 Selamat datang di Movie Explorer App! Ini adalah aplikasi web interaktif sederhana yang memungkinkan Anda menjelajahi daftar film populer, mencari film favorit Anda, memfilter berdasarkan genre, dan bahkan menyimpan film ke daftar favorit pribadi Anda.
 
 Aplikasi ini dibangun menggunakan React.js dan mengonsumsi data dari The Movie Database (TMDb) API.
